@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* IRANSans Font Face Declarations */
+@font-face {
+  font-family: 'IRANSans';
+  src: url('/fonts/eot/IRANSansWeb_UltraLight.eot');
+  src: url('/fonts/eot/IRANSansWeb_UltraLight.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/woff2/IRANSansWeb_UltraLight.woff2') format('woff2'),
+       url('/fonts/woff/IRANSansWeb_UltraLight.woff') format('woff'),
+       url('/fonts/ttf/IRANSansWeb_UltraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSans';
+  src: url('/fonts/eot/IRANSansWeb_Light.eot');
+  src: url('/fonts/eot/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/woff2/IRANSansWeb_Light.woff2') format('woff2'),
+       url('/fonts/woff/IRANSansWeb_Light.woff') format('woff'),
+       url('/fonts/ttf/IRANSansWeb_Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSans';
+  src: url('/fonts/eot/IRANSansWeb.eot');
+  src: url('/fonts/eot/IRANSansWeb.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/woff2/IRANSansWeb.woff2') format('woff2'),
+       url('/fonts/woff/IRANSansWeb.woff') format('woff'),
+       url('/fonts/ttf/IRANSansWeb.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSans';
+  src: url('/fonts/eot/IRANSansWeb_Medium.eot');
+  src: url('/fonts/eot/IRANSansWeb_Medium.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/woff2/IRANSansWeb_Medium.woff2') format('woff2'),
+       url('/fonts/woff/IRANSansWeb_Medium.woff') format('woff'),
+       url('/fonts/ttf/IRANSansWeb_Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANSans';
+  src: url('/fonts/eot/IRANSansWeb_Bold.eot');
+  src: url('/fonts/eot/IRANSansWeb_Bold.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/woff2/IRANSansWeb_Bold.woff2') format('woff2'),
+       url('/fonts/woff/IRANSansWeb_Bold.woff') format('woff'),
+       url('/fonts/ttf/IRANSansWeb_Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: 'IRANSans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  direction: rtl;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-neutral-50 dark:bg-neutral-900 text-neutral-900 dark:text-neutral-50 transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary-500 to-secondary-500 text-white px-6 py-3 rounded-xl font-medium hover:from-primary-600 hover:to-secondary-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5;
+  }
+  
+  .btn-secondary {
+    @apply bg-white dark:bg-neutral-800 text-neutral-700 dark:text-neutral-200 border border-neutral-300 dark:border-neutral-600 px-6 py-3 rounded-xl font-medium hover:bg-neutral-50 dark:hover:bg-neutral-700 transition-all duration-300;
+  }
+  
+  .card {
+    @apply bg-white/80 dark:bg-neutral-800/80 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-white/20 dark:border-neutral-700/50;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl border border-neutral-300 dark:border-neutral-600 bg-white dark:bg-neutral-800 text-neutral-900 dark:text-neutral-100 focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-300;
+  }
+  
+  .section-padding {
+    @apply px-4 md:px-8 lg:px-12 xl:px-20;
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+  
+  .slide-up {
+    animation: slideUp 0.6s ease-out forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.mega-menu {
+  @apply absolute top-full right-0 mt-2 w-screen max-w-6xl bg-white dark:bg-neutral-800 rounded-2xl shadow-2xl border border-neutral-200 dark:border-neutral-700 opacity-0 invisible transform translate-y-4 transition-all duration-300 ease-out;
+}
+
+.mega-menu.active {
+  @apply opacity-100 visible translate-y-0;
+}
