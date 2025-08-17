@@ -13,41 +13,41 @@ export default function MegaMenu({ isOpen }: MegaMenuProps) {
     {
       title: 'تشک و زیرانداز',
       items: [
-        { name: 'تشک فنری', href: '/shop/mattress/spring' },
-        { name: 'تشک لاتکس', href: '/shop/mattress/latex' },
-        { name: 'تشک میموری فوم', href: '/shop/mattress/memory-foam' },
-        { name: 'تشک طبی', href: '/shop/mattress/medical' },
-        { name: 'زیرانداز تشک', href: '/shop/mattress/base' },
+        { name: 'تشک فنری', href: '/shop' },
+        { name: 'تشک لاتکس', href: '/shop' },
+        { name: 'تشک میموری فوم', href: '/product/1' },
+        { name: 'تشک طبی', href: '/shop' },
+        { name: 'زیرانداز تشک', href: '/shop' },
       ]
     },
     {
       title: 'بالش و کوسن',
       items: [
-        { name: 'بالش میموری فوم', href: '/shop/pillow/memory-foam' },
-        { name: 'بالش لاتکس', href: '/shop/pillow/latex' },
-        { name: 'بالش طبی', href: '/shop/pillow/medical' },
-        { name: 'کوسن تزیینی', href: '/shop/pillow/decorative' },
-        { name: 'بالش کودک', href: '/shop/pillow/kids' },
+        { name: 'بالش میموری فوم', href: '/product/3' },
+        { name: 'بالش لاتکس', href: '/product/3' },
+        { name: 'بالش طبی', href: '/product/3' },
+        { name: 'کوسن تزیینی', href: '/shop' },
+        { name: 'بالش کودک', href: '/shop' },
       ]
     },
     {
       title: 'روتختی و ملحفه',
       items: [
-        { name: 'سرویس خواب', href: '/shop/bedding/sets' },
-        { name: 'ملحفه و کتان', href: '/shop/bedding/sheets' },
-        { name: 'روبالشی', href: '/shop/bedding/pillowcase' },
-        { name: 'رومیزی', href: '/shop/bedding/tablecloth' },
-        { name: 'پتو و لحاف', href: '/shop/bedding/blanket' },
+        { name: 'سرویس خواب', href: '/product/2' },
+        { name: 'ملحفه و کتان', href: '/shop' },
+        { name: 'روبالشی', href: '/shop' },
+        { name: 'رومیزی', href: '/shop' },
+        { name: 'پتو و لحاف', href: '/product/4' },
       ]
     },
     {
       title: 'لوازم خواب',
       items: [
-        { name: 'محافظ تشک', href: '/shop/accessories/protector' },
-        { name: 'تنظیم‌کننده دما', href: '/shop/accessories/temperature' },
-        { name: 'چراغ خواب', href: '/shop/accessories/lamp' },
-        { name: 'آرام‌بخش طبیعی', href: '/shop/accessories/aromatherapy' },
-        { name: 'ماسک چشم', href: '/shop/accessories/eye-mask' },
+        { name: 'محافظ تشک', href: '/shop' },
+        { name: 'تنظیم‌کننده دما', href: '/shop' },
+        { name: 'چراغ خواب', href: '/shop' },
+        { name: 'آرام‌بخش طبیعی', href: '/shop' },
+        { name: 'ماسک چشم', href: '/shop' },
       ]
     }
   ];
@@ -135,7 +135,7 @@ export default function MegaMenu({ isOpen }: MegaMenuProps) {
                   کارشناسان ما آماده راهنمایی شما هستند
                 </p>
               </div>
-              <Link href="/contact" className="btn-primary">
+              <Link href="/" className="btn-primary">
                 تماس با ما
               </Link>
             </div>

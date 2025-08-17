@@ -116,7 +116,7 @@ export default function ProductPageClient({ productId }: ProductPageClientProps)
             <span>/</span>
             <a href="/shop" className="hover:text-primary-600">فروشگاه</a>
             <span>/</span>
-            <a href="/shop/mattress" className="hover:text-primary-600">تشک</a>
+            <a href="/shop" className="hover:text-primary-600">تشک</a>
             <span>/</span>
             <span className="text-neutral-900 dark:text-neutral-100">{product.name}</span>
           </div>

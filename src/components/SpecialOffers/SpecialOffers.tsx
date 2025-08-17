@@ -30,7 +30,7 @@ export default function SpecialOffers() {
               فرصت طلایی برای تجربه بهترین کیفیت خواب با قیمت استثنایی
             </p>
             
-            <Link href="/shop/mattress" className="inline-flex items-center bg-white text-primary-600 px-6 py-3 rounded-xl font-medium hover:bg-neutral-100 transition-colors">
+            <Link href="/shop" className="inline-flex items-center bg-white text-primary-600 px-6 py-3 rounded-xl font-medium hover:bg-neutral-100 transition-colors">
               خرید کنید
               <ArrowLeft className="w-5 h-5 mr-2" />
             </Link>
@@ -65,7 +65,7 @@ export default function SpecialOffers() {
                 <p className="text-sm text-neutral-600 dark:text-neutral-300 mb-3">
                   ۲۰% تخفیف برای خرید ست کامل
                 </p>
-                <Link href="/shop/bedding-sets" className="text-primary-600 dark:text-primary-400 text-sm font-medium hover:underline">
+                <Link href="/shop" className="text-primary-600 dark:text-primary-400 text-sm font-medium hover:underline">
                   مشاهده پیشنهاد
                 </Link>
               </div>
@@ -94,7 +94,7 @@ export default function SpecialOffers() {
                 <p className="text-sm text-neutral-600 dark:text-neutral-300 mb-3">
                   مناسب برای مشکلات گردن
                 </p>
-                <Link href="/shop/medical-pillows" className="text-primary-600 dark:text-primary-400 text-sm font-medium hover:underline">
+                <Link href="/shop" className="text-primary-600 dark:text-primary-400 text-sm font-medium hover:underline">
                   مشاهده محصولات
                 </Link>
               </div>

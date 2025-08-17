@@ -12,7 +12,7 @@ export default function CategorySection() {
       name: 'تشک',
       description: 'تشک‌های فنری، لاتکس و میموری فوم',
       image: getImagePath('mattress-1.jpg'),
-      href: '/shop/mattress',
+      href: '/shop',
       size: 'large'
     },
     {
@@ -20,7 +20,7 @@ export default function CategorySection() {
       name: 'بالش',
       description: 'بالش‌های طبی و آرام‌بخش',
       image: getImagePath('pillow-1.jpg'),
-      href: '/shop/pillow',
+      href: '/shop',
       size: 'medium'
     },
     {
@@ -28,7 +28,7 @@ export default function CategorySection() {
       name: 'روتختی',
       description: 'سرویس خواب و ملحفه',
       image: getImagePath('blanket-1.jpg'),
-      href: '/shop/bedding',
+      href: '/shop',
       size: 'medium'
     },
     {
@@ -36,7 +36,7 @@ export default function CategorySection() {
       name: 'پتو و لحاف',
       description: 'پتوهای نرم و گرم',
       image: getImagePath('comforter-1.jpg'),
-      href: '/shop/blanket',
+      href: '/shop',
       size: 'small'
     },
     {
@@ -44,7 +44,7 @@ export default function CategorySection() {
       name: 'لوازم جانبی',
       description: 'محافظ تشک، چراغ خواب',
       image: getImagePath('bedding-1.jpg'),
-      href: '/shop/accessories',
+      href: '/shop',
       size: 'small'
     }
   ];

@@ -38,7 +38,7 @@ export default function Hero() {
                   مشاهده محصولات
                   <ArrowLeft className="w-5 h-5 mr-2" />
                 </Link>
-                <Link href="/contact" className="btn-secondary inline-flex items-center justify-center">
+                <Link href="/" className="btn-secondary inline-flex items-center justify-center">
                   مشاوره رایگان
                 </Link>
               </div>

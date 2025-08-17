@@ -56,10 +56,10 @@ export default function Header() {
                 <MegaMenu isOpen={isMegaMenuOpen} />
               </div>
             </div>
-            <Link href="/about" className="text-neutral-700 dark:text-neutral-200 hover:text-primary-600 transition-colors">
+            <Link href="/" className="text-neutral-700 dark:text-neutral-200 hover:text-primary-600 transition-colors">
               درباره ما
             </Link>
-            <Link href="/contact" className="text-neutral-700 dark:text-neutral-200 hover:text-primary-600 transition-colors">
+            <Link href="/" className="text-neutral-700 dark:text-neutral-200 hover:text-primary-600 transition-colors">
               تماس با ما
             </Link>
           </nav>
@@ -132,10 +132,10 @@ export default function Header() {
               <Link href="/shop" className="text-neutral-700 dark:text-neutral-200 hover:text-primary-600 transition-colors py-2">
                 فروشگاه
               </Link>
-              <Link href="/about" className="text-neutral-700 dark:text-neutral-200 hover:text-primary-600 transition-colors py-2">
+              <Link href="/" className="text-neutral-700 dark:text-neutral-200 hover:text-primary-600 transition-colors py-2">
                 درباره ما
               </Link>
-              <Link href="/contact" className="text-neutral-700 dark:text-neutral-200 hover:text-primary-600 transition-colors py-2">
+              <Link href="/" className="text-neutral-700 dark:text-neutral-200 hover:text-primary-600 transition-colors py-2">
                 تماس با ما
               </Link>
             </div>

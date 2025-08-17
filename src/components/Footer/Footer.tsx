@@ -8,31 +8,31 @@ export default function Footer() {
     {
       title: 'محصولات',
       links: [
-        { name: 'تشک', href: '/shop/mattress' },
-        { name: 'بالش', href: '/shop/pillow' },
-        { name: 'روتختی', href: '/shop/bedding' },
-        { name: 'پتو و لحاف', href: '/shop/blanket' },
-        { name: 'لوازم جانبی', href: '/shop/accessories' },
+        { name: 'تشک', href: '/shop' },
+        { name: 'بالش', href: '/shop' },
+        { name: 'روتختی', href: '/shop' },
+        { name: 'پتو و لحاف', href: '/shop' },
+        { name: 'لوازم جانبی', href: '/shop' },
       ]
     },
     {
       title: 'خدمات',
       links: [
-        { name: 'مشاوره خرید', href: '/consultation' },
-        { name: 'گارانتی', href: '/warranty' },
-        { name: 'ارسال و تحویل', href: '/shipping' },
-        { name: 'پشتیبانی', href: '/support' },
-        { name: 'تعویض و بازگشت', href: '/returns' },
+        { name: 'مشاوره خرید', href: '/' },
+        { name: 'گارانتی', href: '/' },
+        { name: 'ارسال و تحویل', href: '/' },
+        { name: 'پشتیبانی', href: '/' },
+        { name: 'تعویض و بازگشت', href: '/' },
       ]
     },
     {
       title: 'شرکت',
       links: [
-        { name: 'درباره ما', href: '/about' },
-        { name: 'تماس با ما', href: '/contact' },
-        { name: 'وبلاگ', href: '/blog' },
-        { name: 'فرصت‌های شغلی', href: '/careers' },
-        { name: 'حریم خصوصی', href: '/privacy' },
+        { name: 'درباره ما', href: '/' },
+        { name: 'تماس با ما', href: '/' },
+        { name: 'وبلاگ', href: '/' },
+        { name: 'فرصت‌های شغلی', href: '/' },
+        { name: 'حریم خصوصی', href: '/' },
       ]
     }
   ];
