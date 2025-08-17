@@ -33,10 +33,22 @@ npm start
 
 ### روش اول: استقرار خودکار (پیشنهادی)
 
-1. پروژه را روی GitHub پوش کنید
-2. در تنظیمات مخزن، بخش Pages را باز کنید
-3. Source را روی "GitHub Actions" تنظیم کنید
-4. هر بار که کد جدیدی روی branch اصلی push کنید، سایت به‌روزرسانی می‌شود
+1. پروژه را روی GitHub پوش کنید:
+   ```bash
+   git add .
+   git commit -m "Configure for GitHub Pages deployment"
+   git push origin main
+   ```
+
+2. در تنظیمات مخزن، بخش Pages را باز کنید:
+   - Settings > Pages
+   - Source را روی "GitHub Actions" تنظیم کنید
+   
+3. هر بار که کد جدیدی روی branch اصلی push کنید، سایت به‌روزرسانی می‌شود
+
+**نکته مهم:** اگر خطای مجوز دریافت کردید، این تنظیمات را بررسی کنید:
+- Settings > Actions > General > Workflow permissions
+- "Read and write permissions" را انتخاب کنید
 
 ### روش دوم: استقرار دستی
 
