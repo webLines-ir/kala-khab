@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { ThemeProvider } from '@/components/ThemeProvider'
+import FontLoader from '@/components/FontLoader'
 
 export const metadata: Metadata = {
   title: 'خواب آسوده | فروشگاه کالای خواب',
@@ -29,8 +30,24 @@ export default function RootLayout({
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* Preload critical fonts */}
+        <link
+          rel="preload"
+          href={process.env.NODE_ENV === 'production' ? '/kala-khab/fonts/woff2/IRANSansWeb.woff2' : '/fonts/woff2/IRANSansWeb.woff2'}
+          as="font"
+          type="font/woff2"
+          crossOrigin=""
+        />
+        <link
+          rel="preload"
+          href={process.env.NODE_ENV === 'production' ? '/kala-khab/fonts/woff2/IRANSansWeb_Bold.woff2' : '/fonts/woff2/IRANSansWeb_Bold.woff2'}
+          as="font"
+          type="font/woff2"
+          crossOrigin=""
+        />
       </head>
       <body className="font-sans">
+        <FontLoader />
         <ThemeProvider>
           {children}
         </ThemeProvider>

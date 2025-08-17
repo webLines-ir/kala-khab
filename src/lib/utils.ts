@@ -17,3 +17,10 @@ export function getAssetPath(path: string): string {
 export function getImagePath(imageName: string): string {
   return getAssetPath(`/images/${imageName}`);
 }
+
+/**
+ * Get the correct font path for GitHub Pages deployment
+ */
+export function getFontPath(fontPath: string): string {
+  return getAssetPath(fontPath);
+}

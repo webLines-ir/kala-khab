@@ -9,8 +9,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['IRANSans', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
-        'iran': ['IRANSans', 'sans-serif'],
+        'sans': ['Tahoma', 'Arial', 'sans-serif'],
+        'iran': ['IRANSans', 'Tahoma', 'Arial', 'sans-serif'],
       },
       colors: {
         primary: {
