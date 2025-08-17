@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import { getImagePath } from '@/lib/utils';
 import { ArrowLeft } from 'lucide-react';
 
 export default function CategorySection() {
@@ -10,7 +11,7 @@ export default function CategorySection() {
       id: 'mattress',
       name: 'تشک',
       description: 'تشک‌های فنری، لاتکس و میموری فوم',
-      image: '/images/mattress-1.jpg',
+      image: getImagePath('mattress-1.jpg'),
       href: '/shop/mattress',
       size: 'large'
     },
@@ -18,7 +19,7 @@ export default function CategorySection() {
       id: 'pillow',
       name: 'بالش',
       description: 'بالش‌های طبی و آرام‌بخش',
-      image: '/images/pillow-1.jpg',
+      image: getImagePath('pillow-1.jpg'),
       href: '/shop/pillow',
       size: 'medium'
     },
@@ -26,7 +27,7 @@ export default function CategorySection() {
       id: 'bedding',
       name: 'روتختی',
       description: 'سرویس خواب و ملحفه',
-      image: '/images/blanket-1.jpg',
+      image: getImagePath('blanket-1.jpg'),
       href: '/shop/bedding',
       size: 'medium'
     },
@@ -34,7 +35,7 @@ export default function CategorySection() {
       id: 'blanket',
       name: 'پتو و لحاف',
       description: 'پتوهای نرم و گرم',
-      image: '/images/comforter-1.jpg',
+      image: getImagePath('comforter-1.jpg'),
       href: '/shop/blanket',
       size: 'small'
     },
@@ -42,7 +43,7 @@ export default function CategorySection() {
       id: 'accessories',
       name: 'لوازم جانبی',
       description: 'محافظ تشک، چراغ خواب',
-      image: '/images/bedding-1.jpg',
+      image: getImagePath('bedding-1.jpg'),
       href: '/shop/accessories',
       size: 'small'
     }

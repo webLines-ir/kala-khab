@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowLeft, Star, Award, Truck } from 'lucide-react';
+import { getImagePath } from '@/lib/utils';
 
 export default function Hero() {
   return (
@@ -64,7 +65,7 @@ export default function Hero() {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary-500/20 to-secondary-500/20 rounded-4xl"></div>
                 <Image
-                  src="/images/bedroom-1.jpg"
+                  src={getImagePath("bedroom-1.jpg")}
                   alt="خواب آسوده - تشک و کالای خواب با کیفیت"
                   width={600}
                   height={500}

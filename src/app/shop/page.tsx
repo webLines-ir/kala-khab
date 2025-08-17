@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Header from '@/components/Header/Header';
+import { getImagePath } from '@/lib/utils';
 import Footer from '@/components/Footer/Footer';
 import ProductCard from '@/components/ProductCard/ProductCard';
 import { Search, Filter, Grid, List, ChevronDown } from 'lucide-react';
@@ -18,7 +19,7 @@ export default function ShopPage() {
       name: 'تشک میموری فوم پریمیوم دو نفره',
       price: 2890000,
       originalPrice: 3200000,
-      image: '/images/mattress-1.jpg',
+      image: getImagePath('mattress-1.jpg'),
       rating: 4.8,
       reviewCount: 245,
       category: 'تشک',
@@ -29,7 +30,7 @@ export default function ShopPage() {
       id: '2',
       name: 'سرویس خواب ۶ تکه لوکس',
       price: 1250000,
-      image: '/images/blanket-1.jpg',
+      image: getImagePath('blanket-1.jpg'),
       rating: 4.9,
       reviewCount: 189,
       category: 'روتختی'
@@ -39,7 +40,7 @@ export default function ShopPage() {
       name: 'بالش طبی لاتکس',
       price: 890000,
       originalPrice: 1050000,
-      image: '/images/pillow-1.jpg',
+      image: getImagePath('pillow-1.jpg'),
       rating: 4.7,
       reviewCount: 156,
       category: 'بالش',
@@ -49,7 +50,7 @@ export default function ShopPage() {
       id: '4',
       name: 'پتوی نرم و گرم زمستانی',
       price: 450000,
-      image: '/images/comforter-1.jpg',
+      image: getImagePath('comforter-1.jpg'),
       rating: 4.6,
       reviewCount: 98,
       category: 'پتو'
@@ -58,7 +59,7 @@ export default function ShopPage() {
       id: '5',
       name: 'تشک فنری پاکتی دو نفره',
       price: 1890000,
-      image: '/images/bedroom-1.jpg',
+      image: getImagePath('bedroom-1.jpg'),
       rating: 4.5,
       reviewCount: 134,
       category: 'تشک'
@@ -67,7 +68,7 @@ export default function ShopPage() {
       id: '6',
       name: 'سرویس خواب نوزاد',
       price: 680000,
-      image: '/images/pillow-1.jpg',
+      image: getImagePath('pillow-1.jpg'),
       rating: 4.8,
       reviewCount: 67,
       category: 'روتختی',

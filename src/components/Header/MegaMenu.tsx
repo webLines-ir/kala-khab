@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import { getImagePath } from '@/lib/utils';
 
 interface MegaMenuProps {
   isOpen: boolean;
@@ -55,12 +56,12 @@ export default function MegaMenu({ isOpen }: MegaMenuProps) {
     {
       name: 'تشک میموری فوم پریمیوم',
       price: '۲,۸۹۰,۰۰۰',
-      image: '/images/mattress-1.jpg'
+      image: getImagePath('mattress-1.jpg')
     },
     {
       name: 'سرویس خواب لوکس',
       price: '۱,۲۵۰,۰۰۰',
-      image: '/images/blanket-1.jpg'
+      image: getImagePath('blanket-1.jpg')
     }
   ];
 

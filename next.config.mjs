@@ -11,7 +11,8 @@ const nextConfig = {
     unoptimized: true,
     domains: []
   },
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/kala-khab' : '',
+  // GitHub Pages configuration
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/kala-khab/' : '',
   basePath: process.env.NODE_ENV === 'production' ? '/kala-khab' : ''
 };
 

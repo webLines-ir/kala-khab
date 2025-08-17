@@ -2,6 +2,7 @@
 
 import ProductCard from '@/components/ProductCard/ProductCard';
 import Link from 'next/link';
+import { getImagePath } from '@/lib/utils';
 
 export default function FeaturedProducts() {
   const featuredProducts = [
@@ -10,7 +11,7 @@ export default function FeaturedProducts() {
       name: 'تشک میموری فوم پریمیوم دو نفره',
       price: 2890000,
       originalPrice: 3200000,
-      image: '/images/mattress-1.jpg',
+      image: getImagePath('mattress-1.jpg'),
       rating: 4.8,
       reviewCount: 245,
       category: 'تشک',
@@ -21,7 +22,7 @@ export default function FeaturedProducts() {
       id: '2',
       name: 'سرویس خواب ۶ تکه لوکس',
       price: 1250000,
-      image: '/images/blanket-1.jpg',
+      image: getImagePath('blanket-1.jpg'),
       rating: 4.9,
       reviewCount: 189,
       category: 'روتختی'
@@ -31,7 +32,7 @@ export default function FeaturedProducts() {
       name: 'بالش طبی لاتکس',
       price: 890000,
       originalPrice: 1050000,
-      image: '/images/pillow-1.jpg',
+      image: getImagePath('pillow-1.jpg'),
       rating: 4.7,
       reviewCount: 156,
       category: 'بالش',
@@ -41,7 +42,7 @@ export default function FeaturedProducts() {
       id: '4',
       name: 'پتوی نرم و گرم زمستانی',
       price: 450000,
-      image: '/images/comforter-1.jpg',
+      image: getImagePath('comforter-1.jpg'),
       rating: 4.6,
       reviewCount: 98,
       category: 'پتو'

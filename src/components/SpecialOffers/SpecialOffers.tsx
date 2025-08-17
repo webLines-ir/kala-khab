@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Timer, Star, ArrowLeft } from 'lucide-react';
+import { getImagePath } from '@/lib/utils';
 
 export default function SpecialOffers() {
   return (
@@ -45,7 +46,7 @@ export default function SpecialOffers() {
             <div className="flex items-center space-x-reverse space-x-4">
               <div className="relative w-24 h-24 rounded-xl overflow-hidden">
                 <Image
-                  src="/images/blanket-1.jpg"
+                  src={getImagePath("blanket-1.jpg")}
                   alt="سرویس خواب"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -75,7 +76,7 @@ export default function SpecialOffers() {
             <div className="flex items-center space-x-reverse space-x-4">
               <div className="relative w-24 h-24 rounded-xl overflow-hidden">
                 <Image
-                  src="/images/pillow-1.jpg"
+                  src={getImagePath("pillow-1.jpg")}
                   alt="بالش طبی"
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"

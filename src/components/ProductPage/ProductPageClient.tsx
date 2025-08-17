@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
+import { getImagePath } from '@/lib/utils';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import ProductCard from '@/components/ProductCard/ProductCard';
@@ -43,10 +44,10 @@ export default function ProductPageClient({ productId }: ProductPageClientProps)
       'ارتفاع ۲۵ سانتی‌متر'
     ],
     images: [
-      '/images/mattress-1.jpg',
-      '/images/bedroom-1.jpg',
-      '/images/bedding-1.jpg',
-      '/images/pillow-1.jpg'
+      getImagePath('mattress-1.jpg'),
+      getImagePath('bedroom-1.jpg'),
+      getImagePath('bedding-1.jpg'),
+      getImagePath('pillow-1.jpg')
     ],
     sizes: ['تک نفره', 'دو نفره', 'کینگ سایز'],
     colors: ['سفید', 'کرم', 'طوسی', 'آبی روشن']
@@ -76,7 +77,7 @@ export default function ProductPageClient({ productId }: ProductPageClientProps)
       id: '7',
       name: 'بالش میموری فوم',
       price: 450000,
-      image: '/images/pillow-1.jpg',
+      image: getImagePath('pillow-1.jpg'),
       rating: 4.7,
       reviewCount: 89,
       category: 'بالش'
@@ -85,7 +86,7 @@ export default function ProductPageClient({ productId }: ProductPageClientProps)
       id: '8',
       name: 'محافظ تشک ضدآب',
       price: 320000,
-      image: '/images/bedding-1.jpg',
+      image: getImagePath('bedding-1.jpg'),
       rating: 4.5,
       reviewCount: 67,
       category: 'لوازم جانبی'
